@@ -1,0 +1,275 @@
+{
+  "Resources": {
+    "OrdersDdb8DB92DF9": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "KeySchema": [
+          {
+            "AttributeName": "pk",
+            "KeyType": "HASH"
+          },
+          {
+            "AttributeName": "sk",
+            "KeyType": "RANGE"
+          }
+        ],
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "pk",
+            "AttributeType": "S"
+          },
+          {
+            "AttributeName": "sk",
+            "AttributeType": "S"
+          }
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 1,
+          "WriteCapacityUnits": 1
+        },
+        "TableName": "orders"
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "OrdersApplication/OrdersDdb/Resource"
+      }
+    },
+    "OrdersFunctionServiceRoleA7C5E86F": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/CloudWatchLambdaInsightsExecutionRolePolicy"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "OrdersApplication/OrdersFunction/ServiceRole/Resource"
+      }
+    },
+    "OrdersFunctionServiceRoleDefaultPolicyE0D62EE3": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "xray:PutTraceSegments",
+                "xray:PutTelemetryRecords"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "dynamodb:BatchGetItem",
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
+                "dynamodb:Query",
+                "dynamodb:GetItem",
+                "dynamodb:Scan",
+                "dynamodb:ConditionCheckItem",
+                "dynamodb:BatchWriteItem",
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:DeleteItem"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "OrdersDdb8DB92DF9",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Ref": "AWS::NoValue"
+                }
+              ]
+            },
+            {
+              "Action": [
+                "dynamodb:BatchGetItem",
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
+                "dynamodb:Query",
+                "dynamodb:GetItem",
+                "dynamodb:Scan",
+                "dynamodb:ConditionCheckItem"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::ImportValue": "ProductsDdb:ExportsOutputFnGetAttProductsDdb1827BBAAArnF97AE18C"
+                },
+                {
+                  "Ref": "AWS::NoValue"
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "OrdersFunctionServiceRoleDefaultPolicyE0D62EE3",
+        "Roles": [
+          {
+            "Ref": "OrdersFunctionServiceRoleA7C5E86F"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "OrdersApplication/OrdersFunction/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "OrdersFunctionC129706A": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3Bucket1BBDBA85"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3VersionKey1ABED436"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3VersionKey1ABED436"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "OrdersFunctionServiceRoleA7C5E86F",
+            "Arn"
+          ]
+        },
+        "Environment": {
+          "Variables": {
+            "PRODUCTS_DDB": {
+              "Fn::ImportValue": "ProductsDdb:ExportsOutputRefProductsDdb1827BBAA6B56BB73"
+            },
+            "ORDERS_DDB": {
+              "Ref": "OrdersDdb8DB92DF9"
+            },
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
+          }
+        },
+        "FunctionName": "OrdersFunction",
+        "Handler": "index.handler",
+        "Layers": [
+          "arn:aws:lambda:us-east-1:580247275435:layer:LambdaInsightsExtension:14"
+        ],
+        "MemorySize": 128,
+        "Runtime": "nodejs14.x",
+        "Timeout": 30,
+        "TracingConfig": {
+          "Mode": "Active"
+        }
+      },
+      "DependsOn": [
+        "OrdersFunctionServiceRoleDefaultPolicyE0D62EE3",
+        "OrdersFunctionServiceRoleA7C5E86F"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "OrdersApplication/OrdersFunction/Resource",
+        "aws:asset:path": "asset.0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d",
+        "aws:asset:property": "Code"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/zVPQW4DIQx8S+9ep9tIPbeJ1GMUbfoBL7gRuwtIGBpFiL8XSHMajzWeGY847t/w9eWDbjIove6y8oExXyKpFSYWn4Ji+BThWHdX465w9E5iSCrC8cedKZDlyKGRp75As8v67sh6PWP+pnnjpuhDgY3srGlwXvMieOrwlZyKxjswZDFP/nHQ8ew3o+49rk8FZD9Q6yTYq1WOh6RWjgcS/rfHqn+algItDBfZ/Y7v9en68yLGDCG5aCzj9MA/N8DzpxABAAA="
+      },
+      "Metadata": {
+        "aws:cdk:path": "OrdersApplication/CDKMetadata/Default"
+      }
+    }
+  },
+  "Parameters": {
+    "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3Bucket1BBDBA85": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d\""
+    },
+    "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3VersionKey1ABED436": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d\""
+    },
+    "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dArtifactHashA94A13CE": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d\""
+    }
+  },
+  "Outputs": {
+    "ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD": {
+      "Value": {
+        "Fn::GetAtt": [
+          "OrdersFunctionC129706A",
+          "Arn"
+        ]
+      },
+      "Export": {
+        "Name": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+      }
+    }
+  }
+}

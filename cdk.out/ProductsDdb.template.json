@@ -1,0 +1,61 @@
+{
+  "Resources": {
+    "ProductsDdb1827BBAA": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "KeySchema": [
+          {
+            "AttributeName": "id",
+            "KeyType": "HASH"
+          }
+        ],
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "id",
+            "AttributeType": "S"
+          }
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 1,
+          "WriteCapacityUnits": 1
+        },
+        "TableName": "products"
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "ProductsDdb/ProductsDdb/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/zPUMzQ20jNQdEgsL9ZNTsnWr07OL0rVqw4uSUzO1glKLc4vLUpO1XHOzysuKSpNLtFxTsuDidbqgDSlVOYl5uanJOlVhyQm5aSCFIAZtbU6efkpqXpZxfplhmZAa4C2ZBVnZuoWleaVZOam6gVBaAAmEo4mggAAAA=="
+      },
+      "Metadata": {
+        "aws:cdk:path": "ProductsDdb/CDKMetadata/Default"
+      }
+    }
+  },
+  "Outputs": {
+    "ExportsOutputFnGetAttProductsDdb1827BBAAArnF97AE18C": {
+      "Value": {
+        "Fn::GetAtt": [
+          "ProductsDdb1827BBAA",
+          "Arn"
+        ]
+      },
+      "Export": {
+        "Name": "ProductsDdb:ExportsOutputFnGetAttProductsDdb1827BBAAArnF97AE18C"
+      }
+    },
+    "ExportsOutputRefProductsDdb1827BBAA6B56BB73": {
+      "Value": {
+        "Ref": "ProductsDdb1827BBAA"
+      },
+      "Export": {
+        "Name": "ProductsDdb:ExportsOutputRefProductsDdb1827BBAA6B56BB73"
+      }
+    }
+  }
+}

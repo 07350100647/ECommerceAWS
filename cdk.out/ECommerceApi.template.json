@@ -1,0 +1,1119 @@
+{
+  "Resources": {
+    "ECommerceApiE79CFB4A": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Description": "This is the ECommerce API service",
+        "Name": "ECommerceApi"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Resource"
+      }
+    },
+    "ECommerceApiCloudWatchRoleA0000002": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "apigateway.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/CloudWatchRole/Resource"
+      }
+    },
+    "ECommerceApiAccountA3F17E7C": {
+      "Type": "AWS::ApiGateway::Account",
+      "Properties": {
+        "CloudWatchRoleArn": {
+          "Fn::GetAtt": [
+            "ECommerceApiCloudWatchRoleA0000002",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "ECommerceApiE79CFB4A"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Account"
+      }
+    },
+    "ECommerceApiDeploymentC537DBB62631784f5b95248da270a4d2ce678d78": {
+      "Type": "AWS::ApiGateway::Deployment",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "Description": "Automatically created by the RestApi construct"
+      },
+      "DependsOn": [
+        "ECommerceApiordersDELETEF51EE1D4",
+        "ECommerceApiordersGETECA9A526",
+        "ECommerceApiordersPOST2157B406",
+        "ECommerceApiorders2C7B5D79",
+        "ECommerceApiproductsidDELETE504E96B0",
+        "ECommerceApiproductsidGET92BAF597",
+        "ECommerceApiproductsidPUTD9C81FF1",
+        "ECommerceApiproductsidBA77D237",
+        "ECommerceApiproductsGET39FAC467",
+        "ECommerceApiproductsPOST00574EB0",
+        "ECommerceApiproducts320180E3",
+        "ECommerceApivalidator3A3985D3",
+        "OrderModelF3BF987F",
+        "OrderRequestValidator853A12CD",
+        "ProductModelEA4C0B4C",
+        "ProductRequestValidator88FB595D"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Deployment/Resource"
+      }
+    },
+    "ECommerceApiDeploymentStageprod34BEADF8": {
+      "Type": "AWS::ApiGateway::Stage",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "DeploymentId": {
+          "Ref": "ECommerceApiDeploymentC537DBB62631784f5b95248da270a4d2ce678d78"
+        },
+        "StageName": "prod"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/DeploymentStage.prod/Resource"
+      }
+    },
+    "ECommerceApiproducts320180E3": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ECommerceApiE79CFB4A",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "products",
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/Resource"
+      }
+    },
+    "ECommerceApiproductsGETApiPermissionECommerceApi3E70358DGETproducts33045144": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/GET/products"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/GET/ApiPermission.ECommerceApi3E70358D.GET..products"
+      }
+    },
+    "ECommerceApiproductsGETApiPermissionTestECommerceApi3E70358DGETproducts900FFBF1": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/GET/products"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/GET/ApiPermission.Test.ECommerceApi3E70358D.GET..products"
+      }
+    },
+    "ECommerceApiproductsGET39FAC467": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "ECommerceApiproducts320180E3"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/GET/Resource"
+      }
+    },
+    "ECommerceApiproductsPOSTApiPermissionECommerceApi3E70358DPOSTproducts4EB30814": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/POST/products"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/POST/ApiPermission.ECommerceApi3E70358D.POST..products"
+      }
+    },
+    "ECommerceApiproductsPOSTApiPermissionTestECommerceApi3E70358DPOSTproductsD0ACCFC9": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/POST/products"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/POST/ApiPermission.Test.ECommerceApi3E70358D.POST..products"
+      }
+    },
+    "ECommerceApiproductsPOST00574EB0": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "ResourceId": {
+          "Ref": "ECommerceApiproducts320180E3"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "RequestModels": {
+          "application/json": {
+            "Ref": "ProductModelEA4C0B4C"
+          }
+        },
+        "RequestValidatorId": {
+          "Ref": "ProductRequestValidator88FB595D"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/POST/Resource"
+      }
+    },
+    "ECommerceApiproductsidBA77D237": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Ref": "ECommerceApiproducts320180E3"
+        },
+        "PathPart": "{id}",
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/Resource"
+      }
+    },
+    "ECommerceApiproductsidGETApiPermissionECommerceApi3E70358DGETproductsid26FCFDD5": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/GET/products/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/GET/ApiPermission.ECommerceApi3E70358D.GET..products.{id}"
+      }
+    },
+    "ECommerceApiproductsidGETApiPermissionTestECommerceApi3E70358DGETproductsidCF7E569E": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/GET/products/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/GET/ApiPermission.Test.ECommerceApi3E70358D.GET..products.{id}"
+      }
+    },
+    "ECommerceApiproductsidGET92BAF597": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "ECommerceApiproductsidBA77D237"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/GET/Resource"
+      }
+    },
+    "ECommerceApiproductsidPUTApiPermissionECommerceApi3E70358DPUTproductsid4B1016ED": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/PUT/products/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/PUT/ApiPermission.ECommerceApi3E70358D.PUT..products.{id}"
+      }
+    },
+    "ECommerceApiproductsidPUTApiPermissionTestECommerceApi3E70358DPUTproductsidC7AA5068": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/PUT/products/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/PUT/ApiPermission.Test.ECommerceApi3E70358D.PUT..products.{id}"
+      }
+    },
+    "ECommerceApiproductsidPUTD9C81FF1": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "PUT",
+        "ResourceId": {
+          "Ref": "ECommerceApiproductsidBA77D237"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "RequestModels": {
+          "application/json": {
+            "Ref": "ProductModelEA4C0B4C"
+          }
+        },
+        "RequestValidatorId": {
+          "Ref": "ProductRequestValidator88FB595D"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/PUT/Resource"
+      }
+    },
+    "ECommerceApiproductsidDELETEApiPermissionECommerceApi3E70358DDELETEproductsidD6C7799B": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/DELETE/products/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/DELETE/ApiPermission.ECommerceApi3E70358D.DELETE..products.{id}"
+      }
+    },
+    "ECommerceApiproductsidDELETEApiPermissionTestECommerceApi3E70358DDELETEproductsid59D5159E": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/DELETE/products/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/DELETE/ApiPermission.Test.ECommerceApi3E70358D.DELETE..products.{id}"
+      }
+    },
+    "ECommerceApiproductsidDELETE504E96B0": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "DELETE",
+        "ResourceId": {
+          "Ref": "ECommerceApiproductsidBA77D237"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "ProductsFunction:ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/products/{id}/DELETE/Resource"
+      }
+    },
+    "ECommerceApiorders2C7B5D79": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ECommerceApiE79CFB4A",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "orders",
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/Resource"
+      }
+    },
+    "ECommerceApiordersGETApiPermissionECommerceApi3E70358DGETorders5DC1DB41": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/GET/orders"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/GET/ApiPermission.ECommerceApi3E70358D.GET..orders"
+      }
+    },
+    "ECommerceApiordersGETApiPermissionTestECommerceApi3E70358DGETordersEAD5E367": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/GET/orders"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/GET/ApiPermission.Test.ECommerceApi3E70358D.GET..orders"
+      }
+    },
+    "ECommerceApiordersGETECA9A526": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "ECommerceApiorders2C7B5D79"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/GET/Resource"
+      }
+    },
+    "ECommerceApiordersDELETEApiPermissionECommerceApi3E70358DDELETEorders9CB804B8": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/DELETE/orders"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/DELETE/ApiPermission.ECommerceApi3E70358D.DELETE..orders"
+      }
+    },
+    "ECommerceApiordersDELETEApiPermissionTestECommerceApi3E70358DDELETEordersC4C6A715": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/DELETE/orders"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/DELETE/ApiPermission.Test.ECommerceApi3E70358D.DELETE..orders"
+      }
+    },
+    "ECommerceApiordersDELETEF51EE1D4": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "DELETE",
+        "ResourceId": {
+          "Ref": "ECommerceApiorders2C7B5D79"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "RequestParameters": {
+          "method.request.querystring.email": true,
+          "method.request.querystring.orderId": true
+        },
+        "RequestValidatorId": {
+          "Ref": "ECommerceApivalidator3A3985D3"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/DELETE/Resource"
+      }
+    },
+    "ECommerceApiordersPOSTApiPermissionECommerceApi3E70358DPOSTorders4EAB5C4C": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/",
+              {
+                "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+              },
+              "/POST/orders"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/POST/ApiPermission.ECommerceApi3E70358D.POST..orders"
+      }
+    },
+    "ECommerceApiordersPOSTApiPermissionTestECommerceApi3E70358DPOSTordersB735BAF6": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-east-1:796365253277:",
+              {
+                "Ref": "ECommerceApiE79CFB4A"
+              },
+              "/test-invoke-stage/POST/orders"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/POST/ApiPermission.Test.ECommerceApi3E70358D.POST..orders"
+      }
+    },
+    "ECommerceApiordersPOST2157B406": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "ResourceId": {
+          "Ref": "ECommerceApiorders2C7B5D79"
+        },
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::ImportValue": "OrdersApplication:ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD"
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "RequestModels": {
+          "application/json": {
+            "Ref": "OrderModelF3BF987F"
+          }
+        },
+        "RequestValidatorId": {
+          "Ref": "OrderRequestValidator853A12CD"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/Default/orders/POST/Resource"
+      }
+    },
+    "ECommerceApivalidator3A3985D3": {
+      "Type": "AWS::ApiGateway::RequestValidator",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "Name": "Email and OrderId parameters validator",
+        "ValidateRequestParameters": true
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ECommerceApi/validator/Resource"
+      }
+    },
+    "ProductRequestValidator88FB595D": {
+      "Type": "AWS::ApiGateway::RequestValidator",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "Name": "Product request validator",
+        "ValidateRequestBody": true
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ProductRequestValidator/Resource"
+      }
+    },
+    "ProductModelEA4C0B4C": {
+      "Type": "AWS::ApiGateway::Model",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "ContentType": "application/json",
+        "Name": "ProductModel",
+        "Schema": {
+          "type": "object",
+          "properties": {
+            "productName": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "productName",
+            "code"
+          ],
+          "$schema": "http://json-schema.org/draft-04/schema#"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/ProductModel/Resource"
+      }
+    },
+    "OrderRequestValidator853A12CD": {
+      "Type": "AWS::ApiGateway::RequestValidator",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "Name": "Order request validator",
+        "ValidateRequestBody": true
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/OrderRequestValidator/Resource"
+      }
+    },
+    "OrderModelF3BF987F": {
+      "Type": "AWS::ApiGateway::Model",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ECommerceApiE79CFB4A"
+        },
+        "ContentType": "application/json",
+        "Name": "OrderModel",
+        "Schema": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "productIds": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "payment": {
+              "type": "string",
+              "enum": [
+                "CASH",
+                "DEBIT_CARD",
+                "CREDIT_CARD"
+              ]
+            }
+          },
+          "required": [
+            "email",
+            "productIds",
+            "payment"
+          ],
+          "$schema": "http://json-schema.org/draft-04/schema#"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/OrderModel/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/11QQW4CMQx8S+8hsK3EuUCvqNVW6t0kLg0k8TZxitAqf6/Dgop68szE43Hc6e7pUS8enuGUZ8Ye56OhhHp8ZzBHtfmMr4WHwmpDMXMqhpvWY6aSDFbVXCMMbg+MJzjrUZ54Nbhr1w2ujKESWb3g4OkcMF7G3DGJ22PTJnALWEP+I/fJaov8RbZJV9Tjd5HAD/DOAlOauv9pW7LoL6YGqnIQZGXy02ypVXkIOwta+Bum4HJ2FGtVUQz6kOc/3VIuJgc7ZOdmST7lAup+qr8dMg79TQEAAA=="
+      },
+      "Metadata": {
+        "aws:cdk:path": "ECommerceApi/CDKMetadata/Default"
+      }
+    }
+  },
+  "Outputs": {
+    "ECommerceApiEndpointA4C226BB": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Ref": "ECommerceApiE79CFB4A"
+            },
+            ".execute-api.us-east-1.",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "ECommerceApiDeploymentStageprod34BEADF8"
+            },
+            "/"
+          ]
+        ]
+      }
+    }
+  }
+}

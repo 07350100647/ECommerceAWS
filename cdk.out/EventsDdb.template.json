@@ -1,0 +1,73 @@
+{
+  "Resources": {
+    "EventsDdbF6692630": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "KeySchema": [
+          {
+            "AttributeName": "pk",
+            "KeyType": "HASH"
+          },
+          {
+            "AttributeName": "sk",
+            "KeyType": "RANGE"
+          }
+        ],
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "pk",
+            "AttributeType": "S"
+          },
+          {
+            "AttributeName": "sk",
+            "AttributeType": "S"
+          }
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 1,
+          "WriteCapacityUnits": 1
+        },
+        "TableName": "events",
+        "TimeToLiveSpecification": {
+          "AttributeName": "ttl",
+          "Enabled": true
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "EventsDdb/EventsDdb/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/zPUMzQ20jNQdEgsL9ZNTsnWr07OL0rVqw4uSUzO1glKLc4vLUpO1XHOzysuKSpNLtFxTsuDidbqgDSlVOYl5uanJOlVhyQm5aSCFIAZtbU6efkpqXpZxfplhmZAa4C2ZBVnZuoWleaVZOam6gVBaAAmEo4mggAAAA=="
+      },
+      "Metadata": {
+        "aws:cdk:path": "EventsDdb/CDKMetadata/Default"
+      }
+    }
+  },
+  "Outputs": {
+    "ExportsOutputFnGetAttEventsDdbF6692630Arn3CB4F1C7": {
+      "Value": {
+        "Fn::GetAtt": [
+          "EventsDdbF6692630",
+          "Arn"
+        ]
+      },
+      "Export": {
+        "Name": "EventsDdb:ExportsOutputFnGetAttEventsDdbF6692630Arn3CB4F1C7"
+      }
+    },
+    "ExportsOutputRefEventsDdbF6692630A5AF3A92": {
+      "Value": {
+        "Ref": "EventsDdbF6692630"
+      },
+      "Export": {
+        "Name": "EventsDdb:ExportsOutputRefEventsDdbF6692630A5AF3A92"
+      }
+    }
+  }
+}

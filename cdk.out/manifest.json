@@ -1,0 +1,2385 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ProductsDdb": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://796365253277/us-east-1",
+      "properties": {
+        "templateFile": "ProductsDdb.template.json",
+        "tags": {
+          "cost": "ECommerce",
+          "team": "Inatel"
+        },
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/ProductsDdb": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "cost",
+                "Value": "ECommerce"
+              },
+              {
+                "Key": "team",
+                "Value": "Inatel"
+              }
+            ],
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "Object.addStackArtifactToAssembly (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\_shared.ts:25:16)",
+              "LegacyStackSynthesizer.emitStackArtifact (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\stack-synthesizer.ts:29:5)",
+              "LegacyStackSynthesizer.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:99:10)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/ProductsDdb/ProductsDdb": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "ProductsDdb1827BBAA"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "new Table (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:710:38)",
+              "new ProductsDdbStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsDdb-stack.ts:10:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:18:26)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsDdb/ProductsDdb/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductsDdb1827BBAA",
+            "trace": [
+              "new Table (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:681:18)",
+              "new ProductsDdbStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsDdb-stack.ts:10:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:18:26)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsDdb/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/ProductsDdb/Exports/Output{\"Fn::GetAtt\":[\"ProductsDdb1827BBAA\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttProductsDdb1827BBAAArnF97AE18C",
+            "trace": [
+              "ProductsDdbStack.exportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/ProductsDdb/Exports/Output{\"Ref\":\"ProductsDdb1827BBAA\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefProductsDdb1827BBAA6B56BB73",
+            "trace": [
+              "ProductsDdbStack.exportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "ProductsDdb"
+    },
+    "EventsDdb": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://796365253277/us-east-1",
+      "properties": {
+        "templateFile": "EventsDdb.template.json",
+        "tags": {
+          "cost": "ECommerce",
+          "team": "Inatel"
+        },
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/EventsDdb": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "cost",
+                "Value": "ECommerce"
+              },
+              {
+                "Key": "team",
+                "Value": "Inatel"
+              }
+            ],
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "Object.addStackArtifactToAssembly (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\_shared.ts:25:16)",
+              "LegacyStackSynthesizer.emitStackArtifact (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\stack-synthesizer.ts:29:5)",
+              "LegacyStackSynthesizer.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:99:10)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/EventsDdb/EventsDdb": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "EventsDdbF6692630"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "new Table (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:710:38)",
+              "new EventsDdbStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\eventsDdb-stack.ts:10:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:22:24)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EventsDdb/EventsDdb/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EventsDdbF6692630",
+            "trace": [
+              "new Table (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:681:18)",
+              "new EventsDdbStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\eventsDdb-stack.ts:10:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:22:24)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EventsDdb/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/EventsDdb/Exports/Output{\"Fn::GetAtt\":[\"EventsDdbF6692630\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttEventsDdbF6692630Arn3CB4F1C7",
+            "trace": [
+              "EventsDdbStack.exportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/EventsDdb/Exports/Output{\"Ref\":\"EventsDdbF6692630\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefEventsDdbF6692630A5AF3A92",
+            "trace": [
+              "EventsDdbStack.exportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "EventsDdb"
+    },
+    "ProductsFunction": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://796365253277/us-east-1",
+      "properties": {
+        "templateFile": "ProductsFunction.template.json",
+        "tags": {
+          "cost": "ECommerce",
+          "team": "Inatel"
+        },
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "ProductsDdb",
+        "EventsDdb"
+      ],
+      "metadata": {
+        "/ProductsFunction": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f",
+              "id": "f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f",
+              "packaging": "zip",
+              "sourceHash": "f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f",
+              "s3BucketParameter": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fS3BucketE8FDD7B4",
+              "s3KeyParameter": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fS3VersionKeyEEE7ED1E",
+              "artifactHashParameter": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fArtifactHashD5F20A64"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:22:38)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f",
+              "id": "7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f",
+              "packaging": "zip",
+              "sourceHash": "7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f",
+              "s3BucketParameter": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fS3Bucket5D3694C2",
+              "s3KeyParameter": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fS3VersionKeyBDE5C871",
+              "artifactHashParameter": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fArtifactHash78AD27AD"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:42:32)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "cost",
+                "Value": "ECommerce"
+              },
+              {
+                "Key": "team",
+                "Value": "Inatel"
+              }
+            ],
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "Object.addStackArtifactToAssembly (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\_shared.ts:25:16)",
+              "LegacyStackSynthesizer.emitStackArtifact (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\stack-synthesizer.ts:29:5)",
+              "LegacyStackSynthesizer.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:99:10)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/ProductsFunction/ProductEventsFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsFunctionServiceRole75A696BE",
+            "trace": [
+              "new Role (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:318:31)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:22:38)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/ProductEventsFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsFunctionServiceRoleDefaultPolicyF38EFC15",
+            "trace": [
+              "new Policy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "NodejsFunction.addToRolePolicy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:146:15)",
+              "NodejsFunction.buildTracingConfig (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:715:10)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:410:27)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:22:38)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/ProductEventsFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductEventsFunctionF926527D",
+            "trace": [
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:388:35)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:22:38)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/AssetParameters/f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fS3BucketE8FDD7B4",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:22:38)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/AssetParameters/f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fS3VersionKeyEEE7ED1E",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:22:38)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/AssetParameters/f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fArtifactHashD5F20A64",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:22:38)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/AssetParameters/7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fS3Bucket5D3694C2",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:42:32)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/AssetParameters/7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fS3VersionKeyBDE5C871",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:42:32)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/AssetParameters/7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fArtifactHash78AD27AD",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "ProductsFunctionStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:42:32)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/ProductsFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductsFunctionServiceRole8A7C6128",
+            "trace": [
+              "new Role (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:318:31)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:42:32)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/ProductsFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductsFunctionServiceRoleDefaultPolicy556B46E3",
+            "trace": [
+              "new Policy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "NodejsFunction.addToRolePolicy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:146:15)",
+              "NodejsFunction.buildTracingConfig (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:715:10)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:410:27)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:42:32)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/ProductsFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductsFunctionFE1C163A",
+            "trace": [
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:388:35)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new ProductsFunctionStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\productsFunction-stack.ts:42:32)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:26:31)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ProductsFunction/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/ProductsFunction/Exports/Output{\"Fn::GetAtt\":[\"ProductsFunctionFE1C163A\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttProductsFunctionFE1C163AArnBD0C66CB",
+            "trace": [
+              "ProductsFunctionStack.exportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "ProductsFunction"
+    },
+    "OrdersApplication": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://796365253277/us-east-1",
+      "properties": {
+        "templateFile": "OrdersApplication.template.json",
+        "tags": {
+          "cost": "ECommerce",
+          "team": "Inatel"
+        },
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "ProductsDdb"
+      ],
+      "metadata": {
+        "/OrdersApplication": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d",
+              "id": "0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d",
+              "packaging": "zip",
+              "sourceHash": "0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d",
+              "s3BucketParameter": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3Bucket1BBDBA85",
+              "s3KeyParameter": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3VersionKey1ABED436",
+              "artifactHashParameter": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dArtifactHashA94A13CE"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "OrdersApplicationStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:28:23)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "cost",
+                "Value": "ECommerce"
+              },
+              {
+                "Key": "team",
+                "Value": "Inatel"
+              }
+            ],
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "Object.addStackArtifactToAssembly (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\_shared.ts:25:16)",
+              "LegacyStackSynthesizer.emitStackArtifact (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\stack-synthesizer.ts:29:5)",
+              "LegacyStackSynthesizer.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:99:10)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/OrdersApplication/OrdersDdb": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "OrdersDdb8DB92DF9"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "new Table (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:710:38)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:12:20)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/OrdersDdb/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OrdersDdb8DB92DF9",
+            "trace": [
+              "new Table (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:681:18)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:12:20)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/OrdersFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OrdersFunctionServiceRoleA7C5E86F",
+            "trace": [
+              "new Role (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:318:31)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:28:23)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/OrdersFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OrdersFunctionServiceRoleDefaultPolicyE0D62EE3",
+            "trace": [
+              "new Policy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:236:28)",
+              "NodejsFunction.addToRolePolicy (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:146:15)",
+              "NodejsFunction.buildTracingConfig (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:715:10)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:410:27)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:28:23)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/OrdersFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OrdersFunctionC129706A",
+            "trace": [
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:388:35)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:28:23)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/AssetParameters/0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3Bucket1BBDBA85",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "OrdersApplicationStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:28:23)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/AssetParameters/0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3VersionKey1ABED436",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "OrdersApplicationStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:28:23)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/AssetParameters/0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dArtifactHashA94A13CE",
+            "trace": [
+              "new FileAssetParameters (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "OrdersApplicationStack.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:183:20)",
+              "new Function (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:338:29)",
+              "new NodejsFunction (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:53:5)",
+              "new OrdersApplicationStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ordersApplication-stack.ts:28:23)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:34:32)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/OrdersApplication/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/OrdersApplication/Exports/Output{\"Fn::GetAtt\":[\"OrdersFunctionC129706A\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttOrdersFunctionC129706AArn1C82C3BD",
+            "trace": [
+              "OrdersApplicationStack.exportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "OrdersApplication"
+    },
+    "ECommerceApi": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://796365253277/us-east-1",
+      "properties": {
+        "templateFile": "ECommerceApi.template.json",
+        "tags": {
+          "cost": "ECommerce",
+          "team": "Inatel"
+        },
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "ProductsFunction",
+        "OrdersApplication"
+      ],
+      "metadata": {
+        "/ECommerceApi": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "cost",
+                "Value": "ECommerce"
+              },
+              {
+                "Key": "team",
+                "Value": "Inatel"
+              }
+            ],
+            "trace": [
+              "ConstructNode.addMetadata (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "Object.addStackArtifactToAssembly (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\_shared.ts:25:16)",
+              "LegacyStackSynthesizer.emitStackArtifact (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\stack-synthesizer.ts:29:5)",
+              "LegacyStackSynthesizer.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:99:10)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiE79CFB4A",
+            "trace": [
+              "new RestApi (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:463:22)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:11:19)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiCloudWatchRoleA0000002",
+            "trace": [
+              "new Role (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "RestApi._configureCloudWatchRole (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:289:18)",
+              "new RestApi (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:481:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:11:19)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiAccountA3F17E7C",
+            "trace": [
+              "RestApi._configureCloudWatchRole (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:294:22)",
+              "new RestApi (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:481:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:11:19)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiDeploymentC537DBB62631784f5b95248da270a4d2ce678d78",
+            "trace": [
+              "new Deployment (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\deployment.ts:34:21)",
+              "RestApi._configureDeployment (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:318:32)",
+              "new RestApi (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:484:10)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:11:19)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiDeploymentStageprod34BEADF8",
+            "trace": [
+              "new Stage (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\stage.ts:136:22)",
+              "RestApi._configureDeployment (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:328:30)",
+              "new RestApi (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:484:10)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:11:19)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiEndpointA4C226BB",
+            "trace": [
+              "RestApi._configureDeployment (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:333:7)",
+              "new RestApi (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:484:10)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:11:19)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproducts320180E3",
+            "trace": [
+              "new Resource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:342:22)",
+              "RootResource.addResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:91:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:17:41)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/GET/ApiPermission.ECommerceApi3E70358D.GET..products": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsGETApiPermissionECommerceApi3E70358DGETproducts33045144",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:19:24)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/GET/ApiPermission.Test.ECommerceApi3E70358D.GET..products": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsGETApiPermissionTestECommerceApi3E70358DGETproducts900FFBF1",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:19:24)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsGET39FAC467",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:19:24)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/POST/ApiPermission.ECommerceApi3E70358D.POST..products": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsPOSTApiPermissionECommerceApi3E70358DPOSTproducts4EB30814",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:50:24)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/POST/ApiPermission.Test.ECommerceApi3E70358D.POST..products": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsPOSTApiPermissionTestECommerceApi3E70358DPOSTproductsD0ACCFC9",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:50:24)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsPOST00574EB0",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:50:24)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidBA77D237",
+            "trace": [
+              "new Resource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:342:22)",
+              "Resource.addResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:91:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:55:52)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/GET/ApiPermission.ECommerceApi3E70358D.GET..products.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidGETApiPermissionECommerceApi3E70358DGETproductsid26FCFDD5",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:57:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/GET/ApiPermission.Test.ECommerceApi3E70358D.GET..products.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidGETApiPermissionTestECommerceApi3E70358DGETproductsidCF7E569E",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:57:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidGET92BAF597",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:57:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/PUT/ApiPermission.ECommerceApi3E70358D.PUT..products.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidPUTApiPermissionECommerceApi3E70358DPUTproductsid4B1016ED",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:61:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/PUT/ApiPermission.Test.ECommerceApi3E70358D.PUT..products.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidPUTApiPermissionTestECommerceApi3E70358DPUTproductsidC7AA5068",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:61:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/PUT/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidPUTD9C81FF1",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:61:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/DELETE/ApiPermission.ECommerceApi3E70358D.DELETE..products.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidDELETEApiPermissionECommerceApi3E70358DDELETEproductsidD6C7799B",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:66:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/DELETE/ApiPermission.Test.ECommerceApi3E70358D.DELETE..products.{id}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidDELETEApiPermissionTestECommerceApi3E70358DDELETEproductsid59D5159E",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:66:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/products/{id}/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiproductsidDELETE504E96B0",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:66:27)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiorders2C7B5D79",
+            "trace": [
+              "new Resource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:342:22)",
+              "RootResource.addResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:91:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:69:39)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/GET/ApiPermission.ECommerceApi3E70358D.GET..orders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersGETApiPermissionECommerceApi3E70358DGETorders5DC1DB41",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:73:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/GET/ApiPermission.Test.ECommerceApi3E70358D.GET..orders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersGETApiPermissionTestECommerceApi3E70358DGETordersEAD5E367",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:73:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersGETECA9A526",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:73:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/DELETE/ApiPermission.ECommerceApi3E70358D.DELETE..orders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersDELETEApiPermissionECommerceApi3E70358DDELETEorders9CB804B8",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:75:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/DELETE/ApiPermission.Test.ECommerceApi3E70358D.DELETE..orders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersDELETEApiPermissionTestECommerceApi3E70358DDELETEordersC4C6A715",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:75:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersDELETEF51EE1D4",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:75:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/POST/ApiPermission.ECommerceApi3E70358D.POST..orders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersPOSTApiPermissionECommerceApi3E70358DPOSTorders4EAB5C4C",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:125:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/POST/ApiPermission.Test.ECommerceApi3E70358D.POST..orders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersPOSTApiPermissionTestECommerceApi3E70358DPOSTordersB735BAF6",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:125:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/Default/orders/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApiordersPOST2157B406",
+            "trace": [
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:125:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ECommerceApi/validator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ECommerceApivalidator3A3985D3",
+            "trace": [
+              "new RequestValidator (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\requestvalidator.ts:51:22)",
+              "RestApi.addRequestValidator (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:508:12)",
+              "Method.requestValidatorId (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:231:38)",
+              "new Method (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:112:32)",
+              "Resource.addMethod (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:75:22)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ProductRequestValidator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductRequestValidator88FB595D",
+            "trace": [
+              "new RequestValidator (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\requestvalidator.ts:51:22)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:22:39)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/ProductModel/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProductModelEA4C0B4C",
+            "trace": [
+              "new Model (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\model.ts:73:22)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:29:28)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/OrderRequestValidator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OrderRequestValidator853A12CD",
+            "trace": [
+              "new RequestValidator (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\requestvalidator.ts:51:22)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:88:37)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/OrderModel/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OrderModelF3BF987F",
+            "trace": [
+              "new Model (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\model.ts:73:22)",
+              "new EcommerceApiStack (C:\\tools\\dm123\\ECommerceAWS\\lib\\stacks\\ECommerceApiStack\\ecommerceApi-stack.ts:95:26)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\bin\\e_commerce_aws.ts:40:27)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/ECommerceApi/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (C:\\tools\\dm123\\ECommerceAWS\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "ECommerceApi"
+    }
+  }
+}
