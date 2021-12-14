@@ -9,7 +9,7 @@
         "path": "Tree",
         "constructInfo": {
           "fqn": "@aws-cdk/core.Construct",
-          "version": "1.132.0"
+          "version": "1.134.0"
         }
       },
       "ProductsDdb": {
@@ -47,7 +47,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "ScalingRole": {
@@ -55,13 +55,13 @@
                 "path": "ProductsDdb/ProductsDdb/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "CDKMetadata": {
@@ -73,13 +73,13 @@
                 "path": "ProductsDdb/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "Exports": {
@@ -91,7 +91,7 @@
                 "path": "ProductsDdb/Exports/Output{\"Fn::GetAtt\":[\"ProductsDdb1827BBAA\",\"Arn\"]}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Output{\"Ref\":\"ProductsDdb1827BBAA\"}": {
@@ -99,19 +99,19 @@
                 "path": "ProductsDdb/Exports/Output{\"Ref\":\"ProductsDdb1827BBAA\"}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.132.0"
+          "version": "1.134.0"
         }
       },
       "EventsDdb": {
@@ -161,7 +161,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "ScalingRole": {
@@ -169,13 +169,13 @@
                 "path": "EventsDdb/EventsDdb/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "CDKMetadata": {
@@ -187,13 +187,13 @@
                 "path": "EventsDdb/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "Exports": {
@@ -205,7 +205,7 @@
                 "path": "EventsDdb/Exports/Output{\"Fn::GetAtt\":[\"EventsDdbF6692630\",\"Arn\"]}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Output{\"Ref\":\"EventsDdbF6692630\"}": {
@@ -213,19 +213,19 @@
                 "path": "EventsDdb/Exports/Output{\"Ref\":\"EventsDdbF6692630\"}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.132.0"
+          "version": "1.134.0"
         }
       },
       "ProductsFunction": {
@@ -288,7 +288,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -341,19 +341,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Code": {
@@ -365,7 +365,7 @@
                     "path": "ProductsFunction/ProductEventsFunction/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "AssetBucket": {
@@ -377,19 +377,19 @@
                         "path": "ProductsFunction/ProductEventsFunction/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Resource": {
@@ -400,7 +400,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fS3BucketE8FDD7B4"
+                        "Ref": "AssetParameters176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22S3Bucket3C9598A4"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -413,7 +413,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fS3VersionKeyEEE7ED1E"
+                                      "Ref": "AssetParameters176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22S3VersionKey0108B74E"
                                     }
                                   ]
                                 }
@@ -426,7 +426,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParametersf9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06fS3VersionKeyEEE7ED1E"
+                                      "Ref": "AssetParameters176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22S3VersionKey0108B74E"
                                     }
                                   ]
                                 }
@@ -465,7 +465,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "LambdaInsightsLayer": {
@@ -473,91 +473,91 @@
                 "path": "ProductsFunction/ProductEventsFunction/LambdaInsightsLayer",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "AssetParameters": {
             "id": "AssetParameters",
             "path": "ProductsFunction/AssetParameters",
             "children": {
-              "f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f": {
-                "id": "f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f",
-                "path": "ProductsFunction/AssetParameters/f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f",
+              "176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22": {
+                "id": "176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22",
+                "path": "ProductsFunction/AssetParameters/176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "ProductsFunction/AssetParameters/f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f/S3Bucket",
+                    "path": "ProductsFunction/AssetParameters/176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "ProductsFunction/AssetParameters/f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f/S3VersionKey",
+                    "path": "ProductsFunction/AssetParameters/176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "ProductsFunction/AssetParameters/f9ad38d4c2b3fec255efece8fb604eb8916924e268f763a3464e3d2c4c6ce06f/ArtifactHash",
+                    "path": "ProductsFunction/AssetParameters/176ecd737d001b0c8d08ed5e400e72452f5d2d40f87d20015fb4b8482f10be22/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
-              "7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f": {
-                "id": "7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f",
-                "path": "ProductsFunction/AssetParameters/7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f",
+              "e4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24": {
+                "id": "e4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24",
+                "path": "ProductsFunction/AssetParameters/e4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "ProductsFunction/AssetParameters/7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f/S3Bucket",
+                    "path": "ProductsFunction/AssetParameters/e4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "ProductsFunction/AssetParameters/7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f/S3VersionKey",
+                    "path": "ProductsFunction/AssetParameters/e4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "ProductsFunction/AssetParameters/7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4f/ArtifactHash",
+                    "path": "ProductsFunction/AssetParameters/e4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "ProductsFunction": {
@@ -616,7 +616,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -686,19 +686,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Code": {
@@ -710,7 +710,7 @@
                     "path": "ProductsFunction/ProductsFunction/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "AssetBucket": {
@@ -722,19 +722,19 @@
                         "path": "ProductsFunction/ProductsFunction/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Resource": {
@@ -745,7 +745,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fS3Bucket5D3694C2"
+                        "Ref": "AssetParameterse4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24S3Bucket7A3B237F"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -758,7 +758,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fS3VersionKeyBDE5C871"
+                                      "Ref": "AssetParameterse4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24S3VersionKeyCD16440F"
                                     }
                                   ]
                                 }
@@ -771,7 +771,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters7c7bc54d922fe4248604245799444ff0f922bb1735305de5d2846f08bef3bf4fS3VersionKeyBDE5C871"
+                                      "Ref": "AssetParameterse4f4d8fc90d8498c476b03885aef925cda5643cc105c3dd6c6dfa0d477375f24S3VersionKeyCD16440F"
                                     }
                                   ]
                                 }
@@ -813,7 +813,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "LambdaInsightsLayer": {
@@ -821,13 +821,13 @@
                 "path": "ProductsFunction/ProductsFunction/LambdaInsightsLayer",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "CDKMetadata": {
@@ -839,13 +839,13 @@
                 "path": "ProductsFunction/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "Exports": {
@@ -857,19 +857,19 @@
                 "path": "ProductsFunction/Exports/Output{\"Fn::GetAtt\":[\"ProductsFunctionFE1C163A\",\"Arn\"]}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.132.0"
+          "version": "1.134.0"
         }
       },
       "OrdersApplication": {
@@ -915,7 +915,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-dynamodb.CfnTable",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "ScalingRole": {
@@ -923,13 +923,38 @@
                 "path": "OrdersApplication/OrdersDdb/ScalingRole",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-dynamodb.Table",
-              "version": "1.132.0"
+              "version": "1.134.0"
+            }
+          },
+          "OrderEventsTopic": {
+            "id": "OrderEventsTopic",
+            "path": "OrdersApplication/OrderEventsTopic",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "OrdersApplication/OrderEventsTopic/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SNS::Topic",
+                  "aws:cdk:cloudformation:props": {
+                    "displayName": "Order events topic",
+                    "topicName": "order-events"
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-sns.CfnTopic",
+                  "version": "1.134.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-sns.Topic",
+              "version": "1.134.0"
             }
           },
           "OrdersFunction": {
@@ -988,7 +1013,7 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "DefaultPolicy": {
@@ -1057,6 +1082,13 @@
                                       "Ref": "AWS::NoValue"
                                     }
                                   ]
+                                },
+                                {
+                                  "Action": "sns:Publish",
+                                  "Effect": "Allow",
+                                  "Resource": {
+                                    "Ref": "OrderEventsTopic9AB57471"
+                                  }
                                 }
                               ],
                               "Version": "2012-10-17"
@@ -1071,19 +1103,19 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-iam.CfnPolicy",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.Policy",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Code": {
@@ -1095,7 +1127,7 @@
                     "path": "OrdersApplication/OrdersFunction/Code/Stage",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.AssetStaging",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "AssetBucket": {
@@ -1107,19 +1139,19 @@
                         "path": "OrdersApplication/OrdersFunction/Code/AssetBucket/Notifications",
                         "constructInfo": {
                           "fqn": "@aws-cdk/core.Construct",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-s3.BucketBase",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-s3-assets.Asset",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Resource": {
@@ -1130,7 +1162,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3Bucket1BBDBA85"
+                        "Ref": "AssetParameters5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13S3Bucket6121B744"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -1143,7 +1175,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3VersionKey1ABED436"
+                                      "Ref": "AssetParameters5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13S3VersionKey158FD34B"
                                     }
                                   ]
                                 }
@@ -1156,7 +1188,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3dS3VersionKey1ABED436"
+                                      "Ref": "AssetParameters5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13S3VersionKey158FD34B"
                                     }
                                   ]
                                 }
@@ -1180,6 +1212,9 @@
                         "ORDERS_DDB": {
                           "Ref": "OrdersDdb8DB92DF9"
                         },
+                        "ORDER_EVENTS_TOPIC_ARN": {
+                          "Ref": "OrderEventsTopic9AB57471"
+                        },
                         "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
                       }
                     },
@@ -1198,7 +1233,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-lambda.CfnFunction",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "LambdaInsightsLayer": {
@@ -1206,57 +1241,395 @@
                 "path": "OrdersApplication/OrdersFunction/LambdaInsightsLayer",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Resource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "AssetParameters": {
             "id": "AssetParameters",
             "path": "OrdersApplication/AssetParameters",
             "children": {
-              "0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d": {
-                "id": "0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d",
-                "path": "OrdersApplication/AssetParameters/0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d",
+              "5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13": {
+                "id": "5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13",
+                "path": "OrdersApplication/AssetParameters/5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "OrdersApplication/AssetParameters/0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d/S3Bucket",
+                    "path": "OrdersApplication/AssetParameters/5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "OrdersApplication/AssetParameters/0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d/S3VersionKey",
+                    "path": "OrdersApplication/AssetParameters/5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "OrdersApplication/AssetParameters/0f1d1e010abe359d7e6f0215f119119f48f278cdbb68ba82a85fe30ad75e9e3d/ArtifactHash",
+                    "path": "OrdersApplication/AssetParameters/5f9142630131203e84d12f89b90187c8810b29d3487c4b4d0831b3f06c2bfe13/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.Construct",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
+                }
+              },
+              "a949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3a": {
+                "id": "a949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3a",
+                "path": "OrdersApplication/AssetParameters/a949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3a",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "OrdersApplication/AssetParameters/a949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3a/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.134.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "OrdersApplication/AssetParameters/a949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3a/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.134.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "OrdersApplication/AssetParameters/a949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3a/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.134.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
+            }
+          },
+          "orderEventsFunction": {
+            "id": "orderEventsFunction",
+            "path": "OrdersApplication/orderEventsFunction",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "OrdersApplication/orderEventsFunction/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "OrdersApplication/orderEventsFunction/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          },
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/CloudWatchLambdaInsightsExecutionRolePolicy"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.134.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "OrdersApplication/orderEventsFunction/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "OrdersApplication/orderEventsFunction/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "xray:PutTraceSegments",
+                                    "xray:PutTelemetryRecords"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                },
+                                {
+                                  "Action": "dynamodb:PutItem",
+                                  "Condition": {
+                                    "ForAllValues:StringLike": {
+                                      "dynamodb:LeadingKeys": [
+                                        "#order_*"
+                                      ]
+                                    }
+                                  },
+                                  "Effect": "Allow",
+                                  "Resource": {
+                                    "Fn::ImportValue": "EventsDdb:ExportsOutputFnGetAttEventsDdbF6692630Arn3CB4F1C7"
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "orderEventsFunctionServiceRoleDefaultPolicyE76D06ED",
+                            "roles": [
+                              {
+                                "Ref": "orderEventsFunctionServiceRoleF41ED3C6"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.134.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.134.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.134.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "OrdersApplication/orderEventsFunction/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "OrdersApplication/orderEventsFunction/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.134.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "OrdersApplication/orderEventsFunction/Code/AssetBucket",
+                    "children": {
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "OrdersApplication/orderEventsFunction/Code/AssetBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.134.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.134.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.134.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "OrdersApplication/orderEventsFunction/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParametersa949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3aS3BucketE3D150A3"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersa949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3aS3VersionKey5EDB961D"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParametersa949d03f4fd246dd2105df0b2e6e489c038190d8c39367f1ce12f33a8f5d9e3aS3VersionKey5EDB961D"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "orderEventsFunctionServiceRoleF41ED3C6",
+                        "Arn"
+                      ]
+                    },
+                    "environment": {
+                      "variables": {
+                        "EVENTS_DDB": {
+                          "Fn::ImportValue": "EventsDdb:ExportsOutputRefEventsDdbF6692630A5AF3A92"
+                        },
+                        "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1"
+                      }
+                    },
+                    "functionName": "OrderEventsFunction",
+                    "handler": "index.handler",
+                    "layers": [
+                      "arn:aws:lambda:us-east-1:580247275435:layer:LambdaInsightsExtension:14"
+                    ],
+                    "memorySize": 128,
+                    "runtime": "nodejs14.x",
+                    "timeout": 30,
+                    "tracingConfig": {
+                      "mode": "Active"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.134.0"
+                }
+              },
+              "LambdaInsightsLayer": {
+                "id": "LambdaInsightsLayer",
+                "path": "OrdersApplication/orderEventsFunction/LambdaInsightsLayer",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Resource",
+                  "version": "1.134.0"
+                }
+              },
+              "AllowInvoke:OrdersApplicationOrderEventsTopic7CEF3E8B": {
+                "id": "AllowInvoke:OrdersApplicationOrderEventsTopic7CEF3E8B",
+                "path": "OrdersApplication/orderEventsFunction/AllowInvoke:OrdersApplicationOrderEventsTopic7CEF3E8B",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                  "aws:cdk:cloudformation:props": {
+                    "action": "lambda:InvokeFunction",
+                    "functionName": {
+                      "Fn::GetAtt": [
+                        "orderEventsFunction401A7476",
+                        "Arn"
+                      ]
+                    },
+                    "principal": "sns.amazonaws.com",
+                    "sourceArn": {
+                      "Ref": "OrderEventsTopic9AB57471"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                  "version": "1.134.0"
+                }
+              },
+              "OrderEventsTopic": {
+                "id": "OrderEventsTopic",
+                "path": "OrdersApplication/orderEventsFunction/OrderEventsTopic",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "OrdersApplication/orderEventsFunction/OrderEventsTopic/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::SNS::Subscription",
+                      "aws:cdk:cloudformation:props": {
+                        "protocol": "lambda",
+                        "topicArn": {
+                          "Ref": "OrderEventsTopic9AB57471"
+                        },
+                        "endpoint": {
+                          "Fn::GetAtt": [
+                            "orderEventsFunction401A7476",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-sns.CfnSubscription",
+                      "version": "1.134.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-sns.Subscription",
+                  "version": "1.134.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda-nodejs.NodejsFunction",
+              "version": "1.134.0"
             }
           },
           "CDKMetadata": {
@@ -1268,13 +1641,13 @@
                 "path": "OrdersApplication/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "Exports": {
@@ -1286,19 +1659,19 @@
                 "path": "OrdersApplication/Exports/Output{\"Fn::GetAtt\":[\"OrdersFunctionC129706A\",\"Arn\"]}",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.132.0"
+          "version": "1.134.0"
         }
       },
       "ECommerceApi": {
@@ -1321,7 +1694,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnRestApi",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "CloudWatchRole": {
@@ -1364,13 +1737,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-iam.CfnRole",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-iam.Role",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Account": {
@@ -1389,7 +1762,7 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnAccount",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Deployment": {
@@ -1410,13 +1783,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.CfnDeployment",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.Deployment",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "DeploymentStage.prod": {
@@ -1440,13 +1813,13 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.CfnStage",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.Stage",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Endpoint": {
@@ -1454,7 +1827,7 @@
                 "path": "ECommerceApi/ECommerceApi/Endpoint",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnOutput",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "Default": {
@@ -1485,7 +1858,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.CfnResource",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       },
                       "GET": {
@@ -1527,7 +1900,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "ApiPermission.Test.ECommerceApi3E70358D.GET..products": {
@@ -1561,7 +1934,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "Resource": {
@@ -1602,13 +1975,13 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       },
                       "POST": {
@@ -1650,7 +2023,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "ApiPermission.Test.ECommerceApi3E70358D.POST..products": {
@@ -1684,7 +2057,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "Resource": {
@@ -1733,13 +2106,13 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       },
                       "{id}": {
@@ -1763,7 +2136,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnResource",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "GET": {
@@ -1805,7 +2178,7 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               },
                               "ApiPermission.Test.ECommerceApi3E70358D.GET..products.{id}": {
@@ -1839,7 +2212,7 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               },
                               "Resource": {
@@ -1880,13 +2253,13 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.Method",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "PUT": {
@@ -1928,7 +2301,7 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               },
                               "ApiPermission.Test.ECommerceApi3E70358D.PUT..products.{id}": {
@@ -1962,7 +2335,7 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               },
                               "Resource": {
@@ -2011,13 +2384,13 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.Method",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "DELETE": {
@@ -2059,7 +2432,7 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               },
                               "ApiPermission.Test.ECommerceApi3E70358D.DELETE..products.{id}": {
@@ -2093,7 +2466,7 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               },
                               "Resource": {
@@ -2134,25 +2507,25 @@
                                 },
                                 "constructInfo": {
                                   "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                                  "version": "1.132.0"
+                                  "version": "1.134.0"
                                 }
                               }
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.Method",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Resource",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.Resource",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   },
                   "orders": {
@@ -2179,7 +2552,7 @@
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.CfnResource",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       },
                       "GET": {
@@ -2221,7 +2594,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "ApiPermission.Test.ECommerceApi3E70358D.GET..orders": {
@@ -2255,7 +2628,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "Resource": {
@@ -2296,13 +2669,13 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       },
                       "DELETE": {
@@ -2344,7 +2717,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "ApiPermission.Test.ECommerceApi3E70358D.DELETE..orders": {
@@ -2378,7 +2751,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "Resource": {
@@ -2426,13 +2799,13 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       },
                       "POST": {
@@ -2474,7 +2847,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "ApiPermission.Test.ECommerceApi3E70358D.POST..orders": {
@@ -2508,7 +2881,7 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-lambda.CfnPermission",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           },
                           "Resource": {
@@ -2557,25 +2930,25 @@
                             },
                             "constructInfo": {
                               "fqn": "@aws-cdk/aws-apigateway.CfnMethod",
-                              "version": "1.132.0"
+                              "version": "1.134.0"
                             }
                           }
                         },
                         "constructInfo": {
                           "fqn": "@aws-cdk/aws-apigateway.Method",
-                          "version": "1.132.0"
+                          "version": "1.134.0"
                         }
                       }
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.Resource",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.ResourceBase",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               },
               "validator": {
@@ -2597,19 +2970,19 @@
                     },
                     "constructInfo": {
                       "fqn": "@aws-cdk/aws-apigateway.CfnRequestValidator",
-                      "version": "1.132.0"
+                      "version": "1.134.0"
                     }
                   }
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.RequestValidator",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-apigateway.RestApi",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "ProductRequestValidator": {
@@ -2631,13 +3004,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnRequestValidator",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-apigateway.RequestValidator",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "ProductModel": {
@@ -2675,13 +3048,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnModel",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-apigateway.Model",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "OrderRequestValidator": {
@@ -2703,13 +3076,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnRequestValidator",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-apigateway.RequestValidator",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "OrderModel": {
@@ -2760,13 +3133,13 @@
                 },
                 "constructInfo": {
                   "fqn": "@aws-cdk/aws-apigateway.CfnModel",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/aws-apigateway.Model",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           },
           "CDKMetadata": {
@@ -2778,25 +3151,25 @@
                 "path": "ECommerceApi/CDKMetadata/Default",
                 "constructInfo": {
                   "fqn": "@aws-cdk/core.CfnResource",
-                  "version": "1.132.0"
+                  "version": "1.134.0"
                 }
               }
             },
             "constructInfo": {
               "fqn": "@aws-cdk/core.Construct",
-              "version": "1.132.0"
+              "version": "1.134.0"
             }
           }
         },
         "constructInfo": {
           "fqn": "@aws-cdk/core.Stack",
-          "version": "1.132.0"
+          "version": "1.134.0"
         }
       }
     },
     "constructInfo": {
       "fqn": "@aws-cdk/core.App",
-      "version": "1.132.0"
+      "version": "1.134.0"
     }
   }
 }

@@ -5,10 +5,14 @@ const xRay = AWSXRay.captureAWS(require("aws-sdk"));
 const productsDdb = process.env.PRODUCTS_DDB;
 const ordersDdb = process.env.ORDERS_DDB;
 const awsRegion = process.env.AWS_REGION;
+const orderEventsTopicArn = process.env.ORDER_EVENTS_TOPIC_ARN;
+
 AWS.config.update({
     region: awsRegion,
 });
 const ddbClient = new AWS.DynamoDB.DocumentClient();
+const snsClient = new AWS.SNS({ apiVersion: "2010-03-31" });
+
 exports.handler = async function (event, context) {
     const method = event.httpMethod;
     console.log(event);
@@ -68,7 +72,11 @@ exports.handler = async function (event, context) {
                     console.log(product);
                     products.push(product);
                 });
+
                 const orderCreated = await createOrder(orderRequest, products);
+                const eventResult = await sendOrderEvent(orderCreated,"ORDER_CREATED",lambdaRequestId)
+
+                console.log(`Order created event sent - Order: ${orderCreated.sk} - MessageId: ${eventResult.MessageId}`)
                 console.log(orderCreated);
                 return {
                     statusCode: 201,
@@ -93,6 +101,8 @@ exports.handler = async function (event, context) {
                 event.queryStringParameters.orderId
             );
             if (data.Item) {
+                const eventResult = await sendOrderEvent(data.Item,"ORDER_DELETED",lambdaRequestId)
+                console.log(`Order created event sent -Order: ${data.Item.sk} - MessageId: ${eventResult.MessageId}`);
                 return {
                     statusCode: 200,
                     body: JSON.stringify(convertToOrderResponse(data.Item)),
@@ -144,6 +154,32 @@ function getOrder(email, orderId) {
         })
         .promise();
 }
+
+function sendOrderEvent(order, eventType, lambdaRequestId) {
+    const productCodes = [];
+    order.products.forEach((product) => {
+        productCodes.push(product.code);
+    });
+    const orderEvent = {
+        email: order.pk,
+        orderId: order.sk,
+        billing: order.billing,
+        shipping: order.shipping,
+        productCodes: productCodes,
+        requestId: lambdaRequestId,
+    };
+    const envelope = {
+        eventType: eventType,
+        data: JSON.stringify(orderEvent),
+    };
+    const params = {
+        Message: JSON.stringify(envelope),
+        TopicArn: orderEventsTopicArn,
+    };
+    return snsClient.publish(params).promise();
+    
+}
+
 function deleteOrder(email, orderId) {
     return ddbClient
         .delete({

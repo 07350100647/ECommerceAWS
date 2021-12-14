@@ -1085,7 +1085,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAA/11QQW4CMQx8S+8hsK3EuUCvqNVW6t0kLg0k8TZxitAqf6/Dgop68szE43Hc6e7pUS8enuGUZ8Ye56OhhHp8ZzBHtfmMr4WHwmpDMXMqhpvWY6aSDFbVXCMMbg+MJzjrUZ54Nbhr1w2ujKESWb3g4OkcMF7G3DGJ22PTJnALWEP+I/fJaov8RbZJV9Tjd5HAD/DOAlOauv9pW7LoL6YGqnIQZGXy02ypVXkIOwta+Bum4HJ2FGtVUQz6kOc/3VIuJgc7ZOdmST7lAup+qr8dMg79TQEAAA=="
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/11QQW4CMQx8S+8hsGrFuUCvqNVW6t0kLg0k8TZxitAqf6/Dgop68szE43Hc6e7xSS8enuGUZ8Ye56OhhHp8ZzBHtfmMr4WHwmpDMXMqhpvWY6aSDFbVXCMMbg+MJzjrUZ54Nbhr1w2ujKESWb3g4OkcMF7G3DGJ22PTJnALWEP+I/fJaov8RbZJV9Tjd5HAD/DOAlOauv9pW7LoL6YGqnIQZGXy02ypVXkIOwta+Bum4HJ2FGtVUQz6kOc/3VIuJgc7ZOdmST7lAup+qr+ygSUATQEAAA=="
       },
       "Metadata": {
         "aws:cdk:path": "ECommerceApi/CDKMetadata/Default"
